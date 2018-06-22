@@ -1,0 +1,18 @@
+user.name=sketch.xu
+user.email=test@abc.com
+
+
+1.配置仓库
+mkdir project;
+cd project;
+git init;
+git config user.name "username"
+git config user.email "useremail"
+git remote add origin git@github.com:sketch2016/project.git
+
+2.设置密钥
+ssh-keygen -t rsa -C "your_email@youremail.com"
+将公钥复制到github上
+
+3.验证是否成功
+ssh -T git@github.com
