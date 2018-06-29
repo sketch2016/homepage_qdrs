@@ -1,0 +1,218 @@
+
+/*瀵艰埅鏍忕粨鏉�*/
+.banner .container{
+    width: 100%;
+}
+/*banner缁撴潫*/
+
+.about{
+    padding: 65px;
+    background: #fff;
+}
+.about .container .img-b{
+    text-align: center;
+    padding-top: 40px;
+}
+.abouttxt{
+    margin-top: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.abouttxt p{
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 28px;
+}
+.abouttxt span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.pbottom{
+    margin-bottom: 0px !important;
+}
+/*瑙嗛缁撴潫*/
+.single{
+    background: #f5f7fa;
+}
+
+.line{
+    float: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.leftcontent p{
+    text-align: left;
+}
+.single .csr{
+    font-size: 18px;
+    color: #022a56;
+    line-height: 26px;
+    /*margin-top: 20px;*/
+
+}
+.single .chb{
+    font-size: 30px;
+    color: #022a56;
+    line-height: 34px;
+    font-weight: 600;
+}
+.single .pro{
+    font-size: 18px;
+    color: #777777;
+}
+.single .cpro{
+    font-size: 18px;
+    color: #333;
+    line-height: 36px;
+    margin-left: 50px;
+    margin-top:50px ;
+    margin-right: 36px;
+
+}
+
+/*鍗曟煖浠嬬粛缁撴潫*/
+.five{
+    background: #fff;
+    width: 100%;
+}
+.five .img-a{
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+.hovereffect {
+    text-align: center;
+    cursor: default;
+    margin-bottom: 60px;
+}
+.time{
+    padding: 65px;
+    background: #f5f7fa;
+}
+.pDiv{
+    float: left;
+    margin-left: 30px;
+    margin-right: 85px;
+}
+.pDiv p{
+    font-size: 18px;
+    color: #333;
+
+}
+.line-1{
+    margin-bottom: 92px;
+}
+.line-2{
+    margin-bottom: 112px;
+}
+.line-3{
+    margin-bottom: 86px;
+}
+.line-4{
+    margin-bottom: 370px;
+}
+.imgDiv{
+    float: left;
+    margin-right: 70px;
+}
+.rDiv{
+    margin-bottom: 56px;
+}
+.rDiv p,.r2 p,.r3 p,.r4 p{
+    text-align: left;
+}
+.r2{
+    margin-bottom: 36px;
+}
+.r3{
+    margin-bottom: 52px;
+}
+.r4{
+    margin-bottom: 50px;
+}
+.rDiv p,.r2 p,.r3 p,.r4 p{
+    font-size: 18px;
+    color: #333;
+    line-height: 26px;
+}
+.leftcontent{
+    padding:45px 0 65px 0;
+}
+.foot{
+    padding-top: 65px;
+    padding-bottom: 100px;
+    background-color: #022a56;
+}
+.foot li:nth-child(1){
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    padding-bottom: 15px;
+    z-index: 189;
+
+}
+.foot li{
+    list-style: none;
+    padding-top: 5px;
+    z-index: 180;
+}
+.foot a{
+
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.392;
+}
+.foot p{
+    clear: right;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: rgba(255, 255, 255, 0.302);
+    line-height: 2.242;
+    text-align: right;
+    z-index: 187;
+
+}
+.foot img{
+
+}
+.foot img:nth-child(1){
+    margin-left: 30px;
+}
+/*椤佃剼缁撴潫*/
+.footer .btn-default{
+    border-radius: 10px;
+    background-color: rgb(0, 155, 231);
+    width: 154px;
+    height: 48px;
+    line-height: 48px;
+    z-index: 88;
+    margin-left:80px;
+    padding: 0px;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    height: 98px;
+    background-color:rgba( 2,42,86,0.5);
+}
+.footer .input-group {
+    line-height: 98px;
+}
+.footer .container .input-group span{
+    margin-right: 15px;
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    color: #ffffff;
+}
+.footer .input-group input {
+    width: 200px;
+    line-height: 40px;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 767px) {
+    html{
+        font-size:12px;
+    }
+
+}

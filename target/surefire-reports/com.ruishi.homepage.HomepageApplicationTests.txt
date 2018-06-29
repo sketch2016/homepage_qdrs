@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ruishi.homepage.HomepageApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.908 s - in com.ruishi.homepage.HomepageApplicationTests
