@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
     <meta name="keywords" content="人工智能，无人售货柜，人工智能加油站，烟草，启迪睿视，启迪睿视信息技术有限公司">
-    <meta name="description" content="深兰芭堤雅为商业革命的第一个功能性移动空间，开启叮咚打店时代,自此,买东西可以叫一个店，商品无限接近客群，未来召之即来">
+    <meta name="description" content="启迪睿视将人工智能应用到多个领域，主要包括零售行业、能源行业、物流行业和烟草行业，实现了从人工到智能的跨越">
+    <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0">
     <link rel="stylesheet" href="../static/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/index.css">
     <link media="all" type="text/css" rel="stylesheet" href="../static/css/style.css"/>
     <link media="all" type="text/css" rel="stylesheet" href="../static/css/news_qdrs.css"/>
 
     <style>
-        .blank {
-            clear: both;
-            overflow: hidden;
-            display: block;
-            overflow: hidden;
-        }
         .center_white {text-align:center;color: white}
         .center_white p{text-align:center;color: white}
+        .container p {
+            margin-top:10px;
+        }
+        .container h2 {
+
+            font-family: 黑体;
+            font-size: 1.625rem;
+            text-align: center;
+        }
+        .xxian {
+            border-bottom: 2px solid white;
+        }
+        #front-tech p{
+            font-size: 1.125rem;
+        }
+        .news-item:hover {
+            transform: scale(1.2);
+            z-index: 5;
+        }
     </style>
 
     <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
@@ -27,6 +40,15 @@
     <script type="text/javascript" src="../static/js/config.js"></script>
     <script type="text/javascript" src="../static/js/main.js"></script>
     <script type="text/javascript" src="../static/js/autoshowmenu.js"></script>
+
+
+
+    <!--[if lt IE 9]>
+    　　<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    　　<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
 
 
     <!--[if IE]>
@@ -42,66 +64,49 @@
     <![endif]-->
     <script>
         $(document).ready(function () {
-            $('#circleContent').carousel({interval: 2000});//每隔5秒自动轮播
+            $('#rectContent').carousel({interval: 2000});//每隔5秒自动轮播
         });
+
     </script>
 
     <title>启迪睿视信息技术有限公司</title>
 
 </head>
 
-<body>
-<span  id="top"></span>
-<nav class="navbar navbar-default" style="/*position:fixed;*/ z-index: 20; width: 100%;" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header" style="width: 30%; padding-left: 10%">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar"
-                    aria-expanded="false">
-                <span class="sr-only"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#" style="padding: 0px;"><img style="height: 70px;"
-                                                                        src="../static/img/tusvision.jpg"/></a>
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="example-navbar">
-
-            <ul class="nav navbar-nav realNav navbar-right">
-                <li class="active"><a href="">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-                <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')">
-                    <a href="/about">关于睿视
-                        <ul style="list-style: none; text-align: center; display: none; padding: 0px;margin: 2px 0px 0px 0px;position: fixed;" id="aboutus">
-                            <li class="aboutus"><a href="/about#aboutus" style="text-decoration: none; text-align: center">关于我们</a></li>
-                            <li class="aboutus"><a href="/about#brand" style="text-decoration: none; text-align: center">品牌内涵</a></li>
-                            <li class="aboutus"><a href="/about#team" style="text-decoration: none; text-align: center">团队风采</a></li>
-                            <li class="aboutus"><a href="/about#trace" style="text-decoration: none; text-align: center">睿视之路</a></li>
-                        </ul>
-                    </a>
-                </li>
-                <li onmouseover="appear('solutions')" onmouseout="disappear('solutions')">
-                    <a href="/solutions">解决方案
-
-                        <ul style="list-style: none; text-align: center; display: none; padding: 0px;margin: 0px;position: fixed" id="solutions">
-                            <li class="sss"><a href="/solutions#solution1" style="text-decoration: none; text-align: center">方案一</a></li>
-                            <li class="sss"><a href="/solutions#solution2" style="text-decoration: none; text-align: center">方案二</a></li>
-                            <li class="sss"><a href="/solutions#solution3" style="text-decoration: none; text-align: center">方案三</a></li>
-                        </ul>
-
-                    </a>
-                </li>
-                <li><a href="/joinus">加入我们</a></li>
-                <li><a href="/contactus">联系我们</a></li>
-            </ul>
-        </div>
-
-
+<body style="">
+<span id="top"></span>
+<div class="navigation-menu">
+    <div class="qdrs-nav-brand">
+        <a href="/">
+            <img src="../static/img/tusvision.jpg">
+        </a>
     </div>
-
-</nav>
+    <div class="qdrs-nav-menu" style="float: left;display: inline;">
+        <ul style="list-style-type: none">
+            <li class="active"><a href="/">首页</a></li>
+            <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')"><a href="/about">关于睿视</a>
+                <ul id="aboutus">
+                    <li class="aboutus"><a href="/about#about_us">关于我们</a></li>
+                    <li class="aboutus" ><a href="/about#wish">使命愿景</a></li>
+                    <li class="aboutus"><a href="/about#brand">品牌内涵</a></li>
+                    <li class="aboutus"><a href="/about#team">团队风采</a></li>
+                    <li class="aboutus"><a href="/about#trace">睿视之路</a></li>
+                </ul>
+            </li>
+            <li onmouseover="appear('solutions')" onmouseout="disappear('solutions')">
+                <a href="/solutions">解决方案</a>
+                <ul id="solutions" style="list-style-type:none;">
+                    <li class="sss"><a href="/solutions#energy">能源行业</a></li>
+                    <li class="sss"><a href="/solutions#tobacco">烟草行业</a></li>
+                    <li class="sss"><a href="/solutions#retail">零售行业</a></li>
+                    <li class="sss"><a href="/solutions#logistics">物流行业</a></li>
+                </ul>
+            </li>
+            <li><a href="/joinus">加入我们</a></li>
+            <li><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+</div>
 <!--导航结束-->
 <!-- when position:fixed opened, open this too.
 <div>
@@ -110,37 +115,47 @@
 -->
 
 <!--banner -->
-<div class="banner">
+<div class="banner" id="banner">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
-                <div id="circleContent" class="carousel slide">
+                <div id="rectContent" class="carousel slide">
                     <ol class="carousel-indicators">
-                        <li data-target="#circleContent" data-slide-to="0" class="active"></li>
-                        <li data-target="#circleContent" data-slide-to="1"></li>
-                        <li data-target="#circleContent" data-slide-to="2"></li>
+                        <li data-target="#rectContent" data-slide-to="0" class="active"></li>
+                        <li data-target="#rectContent" data-slide-to="1"></li>
+                        <li data-target="#rectContent" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img style="width: 100%;height: 1000px;" src="../static/img/qdrs_product1.jpg"/>
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/banner1_index.webp">
+                                <img style="width: 100%;height: auto;" src="../static/img/banner1_index.jpg"/>
+                            </picture>
                             <div class="carousel-caption"></div>
                         </div>
                         <div class="item">
-                            <img style="width: 100%;height: 1000px;" src="../static/img/qdrs_product2.png"/>
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/banner2_index.webp">
+                                <img style="width: 100%;height: auto;" src="../static/img/banner2_index.jpg"/>
+                            </picture>
                             <div class="carousel-caption"></div>
                         </div>
                         <div class="item">
-                            <img style="width: 100%;height: 1000px;" src="../static/img/qdrs_product3.jpg"/>
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/banner3_index.webp">
+                                <img style="width: 100%;height: auto;" src="../static/img/banner3_index.jpg"/>
+                            </picture>
+
                             <div class="carousel-caption"></div>
                         </div>
                     </div>
                     <!--   <a class="carousel-control left" href="#circleContent" data-slide="prevent">‹</a>
                       <a class="carousel-control right" href="#circleContent" data-slide="next">›</a> -->
-                    <a class="left carousel-control" href="#circleContent" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#rectContent" role="button" data-slide="prev">
                         <span class="glyphicon icon-prev" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#circleContent" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#rectContent" role="button" data-slide="next">
                         <span class="glyphicon icon-next" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -151,42 +166,42 @@
 </div>
 
 <!--前沿科技 -->
-<div>
-    <div style="padding: 50px">
+<div id="front-tech">
+    <div style="padding: 3.12rem; background-image: url(../static/img/bg_front_tech.png);background-repeat: no-repeat;" class="qdrs_title">
         <h1>前沿科技</h1>
-        <h4 style="text-align: center">Frontie<span class="xxian">r&nbsp;Te</span>chnology</h4>
+        <h4>Frontie<span class="xxian">r&nbsp;Te</span>chnology</h4>
     </div>
-    <div class="support center_white" style="background-color: #122b40">
-        <div class="container img-color">
-            <div class="row" style="padding:3% 15%">
+    <div class="center_white" style="background-image: url(../static/img/bg_ft.jpg); background-size: cover;background-position:center;">
+        <div class="container" style="font-family: 黑体!important;">
+            <div class="row" style="padding:4% 15% 3% 15%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
-                        <img src="img/8-train.png" class="center-block" height="160" width="160"/>
+                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
+                        <img src="../static/img/lingxian.png" class="center-block" height="auto" width="20%"/>
                         <h2>领<span class="xxian">先</span>性</h2>
-                        <p>领先性领先性领先性领先性领先性领先性领先性领先性</p>
-                        <p>领先性领先性领先性领先性领先性</p>
+                        <p>贝叶斯方法与马尔科夫链结合神经网络</p>
+                        <p>基于传感器融合的多特征神经网络</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
-                        <img src="img/8-serve.png" class="center-block" height="160" width="160"/>
+                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
+                        <img src="../static/img/chuangxin.png" class="center-block" height="auto" width="20%"/>
                         <h2 style="text-align: center">创<span class="xxian">新</span>性</h2>
-                        <p style="text-align: center">领先性领先性领先性领先性领先性领先性领先性领先性</p>
-                        <p style="text-align: center">领先性领先性领先性领先性领先性</p>
+                        <p style="text-align: center">将人工智能引入传统行业进行智能改造</p>
+                        <p style="text-align: center">端侧运算与云端处理结合的灵活解决方案</p>
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding:3% 15%">
+            <div class="row" style="padding:1% 15% 4% 15%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
-                        <img src="img/8-link.png" class="center-block" height="160" width="160"/>
-                        <h2 style="text-align: center">灵<span class="xxian">活</span>性</h2>
-                        <p style="text-align: center">领先性领先性领先性领先性领先性领先性领先性领先性</p>
-                        <p style="text-align: center">领先性领先性领先性领先性领先性</p>
+                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
+                        <img src="../static/img/linghuo.png" class="center-block" height="auto" width="20%"/>
+                        <h2>灵<span class="xxian">活</span>性</h2>
+                        <p style="text-align: center">开放架构设计，支持多种框架和数据格式</p>
+                        <p style="text-align: center">良好的泛化能力，可快速应用于各种新领域</p>
                     </div>
-                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
-                        <img src="img/8-after.png" class="center-block" height="160" width="160"/>
-                        <h2 style="text-align: center">高<span class="xxian">效</span>性</h2>
-                        <p style="text-align: center">领先性领先性领先性领先性领先性领先性领先性领先性</p>
-                        <p style="text-align: center">领先性领先性领先性领先性领先性</p>
+                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
+                        <img src="../static/img/gaoxiao.png" class="center-block" height="auto" width="20%"/>
+                        <h2>高<span class="xxian">效</span>性</h2>
+                        <p style="text-align: center">低复杂度模型，实现移动处理器上的实时部署</p>
+                        <p style="text-align: center">汇编级底层优化，充分发挥移动处理器潜力</p>
                     </div>
                 </div>
             </div>
@@ -195,57 +210,58 @@
 </div>
 
 <!--战略伙伴 -->
-<div>
-    <div style="padding: 50px">
+<div id="partner">
+    <div style="padding: 3.12em" class="qdrs_title">
         <h1>战略伙伴</h1>
-        <h4 style="text-align: center">Strate<span class="xxian">gic&nbsp;</span>Partner</h4>
+        <h4>Strate<span class="xxian">gic&nbsp;</span>Partner</h4>
     </div>
-    <div class="support" style="background-color: #f5f5f5">
-        <div class="container">
-            <div class="row" style="padding:3% 0% 3% 10%">
+    <div style="background-color: #f5f5f5">
+        <div class="container" style="font-family: 黑体; font-size: 1rem;">
+            <div class="row" style="padding:3% 0% 3% 14%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-train.png" class="center-block" height="180" width="180"/>
-                        <p>江苏中烟</p>
+
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_china.png" class="center-block" width="80%"/>
+                        <p>中国烟草</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-serve.png" class="center-block" height="180" width="180"/>
-                        <p>河南中烟</p>
-                    </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-link.png" class="center-block" height="180" width="180"/>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_yunnan.png" class="center-block" width="80%"/>
                         <p>云南中烟</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-after.png" class="center-block" height="180" width="180"/>
-                        <p>郑州正星集团</p>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_henan.png" class="center-block" width="80%"/>
+                        <p>河南中烟</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-aftera.png" class="center-block" height="180" width="180"/>
-                        <p>...</p>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_jiangsu.png" class="center-block" width="80%"/>
+                        <p>江苏中烟</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_kuka.png" class="center-block" width="80%"/>
+                        <p>库卡机器人</p>
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding:3% 0% 3% 10%">
+            <div class="row" style="padding:3% 0% 3% 14%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-dataa.png" class="center-block" height="180" width="180"/>
-                        <p>...</p>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_zhengxing.png" class="center-block" width="80%"/>
+                        <p>郑州正星集团</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-brand.png" class="center-block" height="180" width="180"/>
-                        <p>上海锦喆物联</p>
-                    </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-skill.png" class="center-block" height="180" width="180"/>
-                        <p>杭州百世物流</p>
-                    </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-set.png" class="center-block" height="180" width="180"/>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_jingjia.png" class="center-block" width="80%"/>
                         <p>深圳劲嘉科技集团</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-6 col-md-6">
-                        <img src="img/8-data.png" class="center-block" height="180" width="180"/>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_baishi.png" class="center-block" width="80%"/>
+                        <p>杭州百世物流</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_ginger.png" class="center-block" width="80%"/>
+                        <p>上海金姜物联</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                        <img src="../static/img/partner_anyone.png" class="center-block" width="80%"/>
                         <p>期待与您合作</p>
                     </div>
                 </div>
@@ -254,30 +270,12 @@
     </div>
 </div>
 
-
-<!--
-<div class="new" id="trandeNewsBox">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12  col-xs-12 nnnew">
-                <h1><span class="xxian" style="display: inline-block">新闻动态</span></h1>
-
-
-            </div>
-        </div>
-
-        <div id="trandeNews" class="row" style="padding-top:0px ">
-        </div>
-
-    </div>
-</div>
--->
-
 <!--新闻动态 -->
+<!--
 <div>
-    <div style="padding-top: 50px">
+    <div style="padding-top: 50px" class="qdrs_title">
         <h1>新闻动态</h1>
-        <h4 style="text-align: center">News<span class="xxian">&nbsp;and&nbsp;</span>Trends</h4>
+        <h4>News &nbsp;<span class="xxian">and&nbsp;</span>Trends</h4>
     </div>
     <div>
         <div class="win-win">
@@ -342,91 +340,109 @@
         </div>
     </div>
 </div>
+-->
 
-<!--技术前瞻 -->
 <div>
-    <div style="padding: 50px 0px; background-color: #fbfbfb">
-        <h3 style="text-align: center">技术前瞻</h3>
-        <p style="text-align: center"><span>2018人工智能十大趋势<br>今年，人工智能将会怎样改变世界和市场？
+    <div class="qdrs_title" style="padding-top: 3.125rem;background-image: url(../static/img/bg_news.png);background-repeat: no-repeat;background-position: right">
+        <h1>新闻动态</h1>
+        <h4>News &nbsp;<span class="xxian">and&nbsp;</span>Trends</h4>
+    </div>
+    <div class="container">
+        <div class="row" style="padding:3% 10%">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4 news-item">
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" srcset="../static/img/news_1.webp">
+                            <img src="../static/img/news_1.jpg" class="center-block" height="auto" width="100%" />
+                        </picture>
+
+                        <p>贝叶斯方法隐马尔科夫链结合神经网络</p>
+                        <p>基于传感器融合的多特征神经网络</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4 news-item">
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" srcset="../static/img/news_2.webp">
+                            <img src="../static/img/news_2.jpg" class="center-block" height="auto" width="100%" />
+                        </picture>
+                        <p style="text-align: center">将人工智能引入传统行业进行只能改造</p>
+                        <p style="text-align: center">端侧运算与云端处理结合的灵活解决方案</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4 news-item">
+                    <a href="#">
+                        <picture>
+                            <source type="image/webp" srcset="../static/img/news_3.webp">
+                            <img src="../static/img/news_3.jpg" class="center-block" height="auto" width="100%" />
+                        </picture>
+                        <p style="text-align: center">将人工智能引入传统行业进行只能改造</p>
+                        <p style="text-align: center">端侧运算与云端处理结合的灵活解决方案</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="center-block" style="width:20%; margin: 0% 40%">
+            <div class="container" style="font-family: 黑体; font-size: 16px;">
+                <div class="row" style="padding:3% 0% 3% 14%">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 arrow-left">
+                            <img src="../static/img/arrow_left.png">
+                        </div>
+                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
+                            <img src="../static/img/circle_dark.png">
+                        </div>
+                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 active">
+                            <img src="../static/img/circle_black.png">
+                        </div>
+                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2">
+                            <img src="../static/img/circle_dark.png">
+                        </div>
+                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 arrow-right">
+                            <img src="../static/img/arrow_right.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+
+</div>
+
+
+    <!--<iframe src="transform.html" width="80%" height="300px" frameborder="0px"></iframe>-->
+
+
+<!--技术前瞻
+<div>
+    <div style="padding: 50px 0px; background-color: #fbfbfb;font-family: 黑体!important;">
+        <h1 style="text-align: center; padding-bottom: 10px;letter-spacing: 0.125rem;font-size: 1.875rem;">技术前瞻</h1>
+        <p style="text-align: center; line-height: 40px;font-size: 1.125rem;letter-spacing: 0.125rem"><span>2018人工智能十大趋势<br>今年，人工智能将会怎样改变世界和市场？
             <br>人工智能时各个国家和公司竞相争夺控制权的前沿科技。</span></p>
     </div>
 </div>
-
+-->
 <!--返回顶部 -->
 <div class="do-adrift">
     <div class="do-gotop" title="返回顶部"><i class="icon-to-top"></i></div>
 </div>
 
-<!--
-<div class="foot" style="">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-6">
-                <div class="col-lg-3 col-sm-3 col-xs-3">
-                    <ul class="">
-                        <li class="title">产品系列</li>
-                        <li><a href="#">主要产品</a></li>
-                        <li><a href="#">其他产品</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-lg-3 col-xs-3 col-sm-3">
-                    <ul class="">
-                        <li class="title">经销合作</li>
-                        <li><a href="#">八大支持</a></li>
-                        <li><a href="#">项目优势</a></li>
-                        <li><a href="#">申请条件</a></li>
-                        <li><a href="#">合作流程</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-lg-3 col-xs-3 col-sm-3">
-                    <ul class="">
-                        <li class="title">新闻动态</li>
-                        <li><a href="#">行业新闻</a></li>
-                        <li><a href="#">公司新闻</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-lg-3 col-xs-3 col-sm-3">
-                    <ul class="">
-                        <li class="title">关于我们</li>
-                        <li><a href="#">公司简介</a></li>
-                        <li><a href="#">创始人</a></li>
-                        <li><a href="#">获得荣誉</a></li>
-                        <li><a href="#">深兰之路</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-            <div class="col-lg-6 foot-right">
-
-
-                <img class="pull-right" src="../static/img/tusvision.jpg" height="92" width="92"/>
-                <img class="pull-right" src="img/erwm.png" height="90" width="90"/>
-                <p style="text-align: right;color: #ff0000;">启迪睿视信息技术有限公司<br>
-                    上海市长宁区凯旋路1010号百脑通数码城B座2层<br>
-                    ©xxxx 沪ICP备17036127号-2
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
--->
 <!--二维码 -->
 <div>
     <div class="support" style="background-color: #f5f5f5">
-        <div class="container img-color">
+        <div class="container" style="font-family: 黑体; font-size: 1.125rem">
             <div class="row" style="padding:3% 20%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
                     <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
-                        <img src="../static/img/erweima.png" class="center-block" height="180" width="180"/>
-                        <p>启迪睿视官方微信</p>
+                        <img src="../static/img/erweima.png"  style="border-radius:50%; min-width: 75px" class="center-block" height="auto" width="20%;"/>
+                        <p style="font-family: 黑体; font-size: 1.125rem">启迪睿视官方微信</p>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
-                        <img src="../static/img/erweima.png" class="center-block" height="180" width="180"/>
-                        <p>启迪睿视官方APP</p>
+                        <img src="../static/img/erweima.png" style="border-radius:50%;min-width: 75px" class="center-block" height="auto" width="20%"/>
+                        <p style="font-family: 黑体; font-size: 1.125rem">启迪睿视官方APP</p>
                     </div>
                 </div>
             </div>
@@ -435,10 +451,9 @@
 </div>
 
 <!--回到顶部 -->
-<div>
+<div class="gotop">
     <a href="#">
-        <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部" style="z-index:25; position: fixed;
-         right: 10px; bottom: 10px;display: none;">
+        <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部">
     </a>
 </div>
 <script>
@@ -460,10 +475,15 @@
                 //alert("disappear")
                 disappear('solutions');
             });
-            $(".about").click(function(){
+            $(".aboutus").click(function(){
                 //alert("disappear")
                 disappear('aboutus');
             });
+            $(".aboutus").hover(function () {
+                //alert("hover")
+                //$("#aboutus").css("border-top", "none");
+            });
+
         });
     });
 </script>

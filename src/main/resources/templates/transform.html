@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>HTML5移动端图片左右切换动画DEMO演示</title>
+    <link rel="stylesheet" href="../static/css/news/reset.css"/>
+    <link rel="stylesheet" href="../static/css/news/case-style.css"/>
+    <link rel="stylesheet" href="../static/css/news/default_skin.css"/>
+    <script src="../static/js/news/jquery-1.11.2.min.js"></script>
+    <script src="../static/js/news/jquery.cycle2.min.js"></script>
+    <script src="../static/js/news/jquery.sky.carousel-1.0.2.min.js"></script>
+    <script src="../static/js/news/lib.js"></script>
+    <script src="../static/js/news/scripts.js"></script>
+    <script>
+        $(function () {
+
+            buildSideNav();
+
+            skyCarousel = $('#character-slider').carousel({
+                itemWidth: 528,
+                itemHeight: 512,
+                enableMouseWheel: false,
+                gradientOverlayVisible: true,
+                gradientOverlayColor: '#F0F3EE',
+                gradientOverlaySize: 300,
+                distance: 30,
+                selectedItemDistance: 80,
+                selectByClick: true,
+                selectedItemZoomFactor: 0.8,
+                unselectedItemZoomFactor: 0.4,
+                navigationButtonsVisible: false,
+                showPreloader: false,
+                autoSlideshow: true
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+<!--
+<div id="site-wrapper">
+    <section id="section-header" data-coloroverlap="dark"></section>
+    <section id="second-phase" class="phase-row" data-title="Illustrations" data-coloroverlap="light">
+        <div class="shell">
+            <div class="second-row">
+                <article>
+                    <div id="character-slider" class="sky-carousel sc-no-select" style="visibility: visible;">
+                        <div class="sky-carousel-wrapper" style="visibility: visible; opacity: 1;">
+                            <ul class="sky-carousel-container"
+                                style="margin-top: -21.2px; left: -1552.4px; transition: left 0.45s ease-out; -webkit-transition: left 0.45s ease-out;">
+                                <li style="transform-origin: center 256px 0px; transform: translate(0px, 0px) scale(0.4) translateZ(0px); opacity: 0.6; z-index: 10;"
+                                    class="">
+                                    <img src="../static/img/news_1.png" alt="" class="sc-image">
+                                </li>
+                                <li style="transform-origin: center 256px 0px; transform: translate(241.2px, 0px) scale(0.4) translateZ(0px); opacity: 0.6; z-index: 8;"
+                                    class="">
+                                    <img src="../static/img/news_2.png" alt="" class="sc-image">
+                                </li>
+                                <li style="transform-origin: center 256px 0px; transform: translate(482.4px, 0px) scale(0.4) translateZ(0px); opacity: 0.6; z-index: 8;"
+                                    class="">
+                                    <img src="../static/img/news_3.png" alt="" class="sc-image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</div>
+-->
+<div>
+    <div id="site-wrapper">
+        <section id="section-header" data-coloroverlap="dark"></section>
+        <section id="second-phase" class="phase-row" data-title="Illustrations" data-coloroverlap="light">
+            <div class="shell">
+                <div class="second-row">
+                    <article>
+                        <div id="character-slider" class="sky-carousel sc-no-select" style="visibility: visible;">
+                            <div class="sky-carousel-wrapper" style="visibility: visible; opacity: 1;">
+                                <ul class="sky-carousel-container"
+                                    style="margin-top: -21.2px; left: -1552.4px; transition: left 0.45s ease-out; -webkit-transition: left 0.45s ease-out;">
+                                    <li style="transform-origin: center 256px 0px; transform: translate(0px, 0px) scale(0.6) translateZ(0px); opacity: 0.6; z-index: 10;"
+                                        class="">
+                                        <img src="../static/img/news_1.png" alt="" class="sc-image">
+                                    </li>
+                                    <li style="transform-origin: center 256px 0px; transform: translate(241.2px, 0px) scale(0.6) translateZ(0px); opacity: 0.6; z-index: 8;"
+                                        class="">
+                                        <img src="../static/img/news_2.png" alt="" class="sc-image">
+                                    </li>
+                                    <li style="transform-origin: center 256px 0px; transform: translate(482.4px, 0px) scale(0.6) translateZ(0px); opacity: 0.6; z-index: 8;"
+                                        class="">
+                                        <img src="../static/img/news_3.png" alt="" class="sc-image">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

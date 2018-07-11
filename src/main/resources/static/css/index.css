@@ -38,20 +38,33 @@ nav.container{
     padding:15px 30px 15px 30px;
 }
 .realNav li{
-    padding: 0 20px;
+    margin: 0 20px;
+}
+.realNav >li > a {
+    font-family: "黑体";
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
 }
 .nav a{
-    color: #333333!important;
-    font-size: 1.25rem;
+    color: #000 /*!important*/;
+    /*font-size: 1.16rem;*/
 }
-.realNav li:hover{
-    background-color: rgba(231, 232, 233,0.3);
-    border-bottom: 4px solid #0099f7;
+.realNav > li:hover{
+    background-color: #2f3f4f;
+    border-bottom: 2px solid red/*#0099f7*/;
+}
+
+.realNav > li > ul > li{
+    border-bottom: 2px solid #aaa;
+}
+
+.realNav > li > ul > li:hover{
+    border-color: red;
 }
 
 .nav .active{
-    background-color: rgba(231, 232, 233,0.5);
-    border-bottom: 4px solid #0099f7;
+    background-color: #2f3f4f;
+    border-bottom: 2px solid red/*#0099f7*/;
 }
 .nav a{
     background-color: transparent!important;
@@ -73,7 +86,7 @@ h1,p {
 }
 .xxian{
     display: inline-block;
-    border-bottom: 5px solid #039ce5;
+    border-bottom: 2px solid #039ce5;
     padding-bottom: 15px;
     /*margin-bottom: 30px;*/
 }
@@ -648,3 +661,253 @@ h1,p {
     display: block;
     text-align: center;
 }
+
+.qdrs_solution {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    /*padding: 15px 40px*/
+}
+
+.qdrs_title h1 {
+    font-size: 2.5rem;
+    margin-bottom: -10px;
+    margin-top:1.875rem;
+    letter-spacing: 2.5px;
+    font-family: "黑体";
+    color: red;
+}
+
+.qdrs_title h4 {
+    text-align: center;
+    font-family: "黑体";
+    font-size: 1rem;
+    letter-spacing: 2.3px;
+    margin-bottom: 1.875rem;
+    font-weight: bold;
+    color: red;
+}
+.qdrs_title h4 > .xxian {
+    border-bottom-color: red!important;
+}
+.front-tech h2 {
+    font-family: "黑体";
+    font-size: 1.625rem;
+}
+.fill {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position:center;
+}
+
+.front-tech p {
+    font-family: "黑体" !important;
+    font-size: 1.125rem !important;
+}
+
+.qdrs_title span {
+    border-bottom:3px solid black;
+}
+
+.center_white {text-align:center;color: white}
+.center_white p{text-align:center;color: white}
+.container p {
+    margin-top:10px;
+}
+.container h2 {
+
+    font-family: 黑体;
+    font-size: 1.625rem;
+    text-align: center;
+}
+.white_bottom {
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+#wish h2 {
+   padding-top: 10px;
+}
+/*for navigtinmenu-start*/
+body {
+    font-family: 黑体 !important;
+}
+
+.navigation-menu {
+    height: 90px;
+    width: 100%;
+    background-color: #efefef;
+    z-index: 10;
+}
+
+.qdrs-nav-brand {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.qdrs-nav-brand img {
+    height: 100%;
+    width: auto;
+    float: right;
+}
+
+.qdrs-nav-menu {
+    height: 100%;
+    z-index: 15;
+    width: 80%;
+}
+
+.qdrs-nav-menu > ul {
+    position: absolute;
+    right: 20%;
+    float: left;
+}
+
+.qdrs-nav-menu > ul > li {
+    float: left;
+    margin: 0px 20px;
+    z-index: 20;
+
+}
+.qdrs-nav-menu > ul > li > a {
+    padding: 30px 20px;
+    position: relative;
+    display: block;
+}
+
+.qdrs-nav-menu > ul > li > ul {
+    float: left;
+    position: absolute;
+    list-style-type: none;
+    z-index: 15;
+}
+
+.qdrs-nav-menu > ul > li > ul > li {
+    float: none;
+    border-bottom: 0.125rem solid #aaa;
+    z-index: 15;
+}
+.qdrs-nav-menu > ul > li > ul > li:first-child {
+    border-top:2px solid red;
+}
+
+.qdrs-nav-menu a {
+    text-decoration: none !important;
+    padding-bottom: 20px;
+    color: #000;
+
+}
+.qdrs-nav-menu > ul > .active,
+.qdrs-nav-menu > ul > .active > a{
+    background-color: #2f3f4f;
+    color: #fff;
+
+}
+.qdrs-nav-menu li:hover,
+.qdrs-nav-menu > ul > .active {
+    border-bottom: 2px solid red;
+    background-color: #2f3f4f;
+}
+.qdrs-nav-menu li:hover a {
+    color: #fff;
+}
+#aboutus, #solutions, #aboutus1{
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    background-color: #2f3f4f;
+}
+
+.aboutus > a, .sss > a {
+    color: white;
+    line-height: 30px;
+    padding: 5px 20px;
+}
+.energy {
+    color: white;
+    padding: 13.875rem 0% 0% 40%;
+    background-size: cover;
+    background-position: center;
+}
+.tobacco {
+    color: white;
+    padding: 13.875rem 30% 0% 0%;
+    background-size: cover;
+    background-position:center;
+}
+.energy > .qdrs_solution{
+    padding: 2.375rem 11.625rem 3.125rem 2.5rem
+}
+.tobacco .qdrs_solution {
+    padding: 2.375rem 6.25rem 3.125rem 10.75rem
+}
+.retail > .qdrs_solution {
+    padding: 2.375rem 11.625rem 5rem 2.5rem
+}
+.qdrs-nav-menu li:hover li>a {
+
+}
+.gotop img{
+    z-index:25;
+    position: fixed;
+    width: 4rem;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+@media only screen and (max-width: 768px)  {
+    html {
+        font-size: 8px!important;
+    }
+    .navigation-menu {
+        height: 30px;
+    }
+    .qdrs-nav-menu > ul {
+        right: 0px;
+    }
+    .qdrs-nav-menu > ul > li > a{
+        padding: 7px 5px;
+    }
+    .aboutus > a, .sss > a {
+        padding: 3px 5px!important;
+    }
+    .qdrs-nav-menu > ul > li {
+        margin: 0px 5px;
+    }
+    .abouttusvision {
+        padding: 2rem;
+    }
+    .fill {
+        height: 5rem;
+    }
+    .energy, .retail {
+        padding-top: 6rem!important;
+        padding-left: 8rem!important;
+    }
+    .tobacco, .logistics {
+        padding-top: 6rem!important;
+        padding-right: 8rem!important;
+    }
+    .energy .qdrs_solution,
+    .retail .qdrs_solution {
+        padding: 1rem !important;
+    }
+    .tobacco .qdrs_solution,
+    .logistics .qdrs_solution {
+        padding: 1rem !important;
+    }
+    #dituContent {
+        height: 200px!important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .team {
+        padding-left: 10%!important;
+        padding-right: 10%!important;
+    }
+}
+/*for navigtinmenu-end*/
