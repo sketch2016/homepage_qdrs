@@ -4507,18 +4507,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: #000;
     font-family: "Microsoft YaHei";
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #333;
+    color: #fff;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
+    color: #fff;
     background-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -4608,7 +4608,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-    color: #fff;
+    color: #000;
     background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
@@ -6420,21 +6420,17 @@ button.close {
 */
 .carousel-indicators li {
     display: inline-block;
-    width: 24px;
-    height: 3px;
-    margin: 2px;
+    width: 2.5rem;
+    height: 0.375rem;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #00f;
-    border-radius: 0px;
+    background-color: white;
+    border-radius: 0.185rem;
 }
 .carousel-indicators .active {
-    width: 30px;
-    height: 6px;
-    margin: 0;
-    background-color: #00f;
+    width: 5rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
 }
 .carousel-caption {
     position: absolute;

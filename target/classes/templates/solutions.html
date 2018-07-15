@@ -1,15 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="keywords" content="人工智能，无人售货柜，人工智能加油站，烟草，启迪睿视，启迪睿视信息技术有限公司">
+    <meta name="description" content="启迪睿视将人工智能应用到多个领域，主要包括零售行业、能源行业、物流行业和烟草行业，实现了从人工到智能的跨越">
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <link rel="stylesheet" href="../static/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/index.css">
 
     <style>
-        .blank{ clear:both; overflow:hidden; display:block; overflow:hidden;}
+        h2 {
+            font-family: 黑体;
+            font-size: 2.25rem;
+        }
+
+        ol {
+            font-family: 黑体;
+            font-size: 1.25rem !important;
+            line-height: 1.875rem !important;
+        }
+
     </style>
 
     <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
@@ -20,7 +32,13 @@
 
     <!--[if IE]>
     <script>
-        (function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+        (function () {
+            if (!/*@cc_on!@*/0) return;
+            var e = "header,footer,nav,article,section".split(','), i = e.length;
+            while (i--) {
+                document.createElement(e[i])
+            }
+        })()
     </script>
     <![endif]-->
     <script>
@@ -33,55 +51,49 @@
 
 </head>
 
-<body>
+<body style="">
 
-<nav class="navbar navbar-default" style="/*position:fixed;*/ z-index: 20; width: 100%;" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar"
-                    aria-expanded="false">
-                <span class="sr-only"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#" style="padding: 0px;"><img style="height: 70px;" src="../static/img/tusvision.jpg" /></a>
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="example-navbar">
-
-            <ul class="nav navbar-nav realNav navbar-right">
-                <li><a href="/index" style="text-decoration: none">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-                <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')">
-                    <a href="/about">关于睿视
-                        <ul style="list-style: none; text-align: center; display: none; padding: 0px;margin: 2px 0px 0px 0px;position: fixed;" id="aboutus">
-                            <li class="aboutus"><a href="/about#aboutus" style="text-decoration: none; text-align: center">关于我们</a></li>
-                            <li class="aboutus"><a href="/about#brand" style="text-decoration: none; text-align: center">品牌内涵</a></li>
-                            <li class="aboutus"><a href="/about#team" style="text-decoration: none; text-align: center">团队风采</a></li>
-                            <li class="aboutus"><a href="/about#trace" style="text-decoration: none; text-align: center">睿视之路</a></li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="active" onmouseover="appear('solutions')" onmouseout="disappear('solutions')">
-                    <a style="text-decoration: none">解决方案
-                        <ul style="list-style: none; text-align: center; display: none; padding: 0px;margin: 0px;position: fixed" id="solutions">
-                            <li class="sss"><a href="#solution1" style="text-decoration: none; text-align: center">方案一</a></li>
-                            <li class="sss"><a href="#solution2" style="text-decoration: none; text-align: center">方案二</a></li>
-                            <li class="sss"><a href="#solution3" style="text-decoration: none; text-align: center">方案三</a></li>
-                        </ul>
-                    </a>
-                </li>
-                <li><a href="/joinus">加入我们</a></li>
-                <li><a href="/contactus">联系我们</a></li>
-            </ul>
-        </div>
-
-
+<div class="navigation-menu">
+    <div class="qdrs-nav-brand">
+        <a href="/">
+            <img src="../static/img/tusvision.jpg">
+        </a>
     </div>
-
-</nav>
+    <div class="qdrs-nav-menu" style="float: left;">
+        <ul style="list-style-type: none">
+            <li><a href="/">首页</a></li>
+            <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')"><a href="/about">关于睿视</a>
+                <ul id="aboutus">
+                    <li class="aboutus"><a href="/about#about_us">关于我们</a></li>
+                    <li class="aboutus" ><a href="/about#wish">使命愿景</a></li>
+                    <li class="aboutus"><a href="/about#brand">品牌内涵</a></li>
+                    <li class="aboutus"><a href="/about#team">团队风采</a></li>
+                    <li class="aboutus"><a href="/about#trace">睿视之路</a></li>
+                </ul>
+            </li>
+            <li onmouseover="appear('solutions')" onmouseout="disappear('solutions')" class="active">
+                <a href="/solutions">解决方案</a>
+                <ul id="solutions" style="list-style-type:none;">
+                    <li class="sss"><a href="#energy">能源行业</a></li>
+                    <li class="sss"><a href="#tobacco">烟草行业</a></li>
+                    <li class="sss"><a href="#retail">零售行业</a></li>
+                    <li class="sss"><a href="#logistics">物流行业</a></li>
+                </ul>
+            </li>
+            <li><a href="/joinus">加入我们</a></li>
+            <li><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="nav-mobile" >
+        <ul style=";z-index: 20;width: 100%;list-style-type: none;background-color: rgba(0,0,0,0.7)">
+            <li ><a href="/">首页</a></li>
+            <li ><a href="/about">关于睿视</a></li>
+            <li ><a href="/solutions">解决方案</a></li>
+            <li ><a href="/joinus">加入我们</a></li>
+            <li ><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+</div>
 
 <!--导航结束-->
 <!-- when position:fixed opened, open this too.
@@ -89,6 +101,7 @@
     <span class="blank" style="height:50px;"></span>
 </div>
 -->
+<div class ="fill-nav"></div>
 
 <div class="banner">
     <div class="container">
@@ -97,7 +110,11 @@
                 <div id="circleContent" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img style="width: 100%;" src="../static/img/qdrs_product2.png"/>
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/banner_solution.webp">
+                                <img style="width: 100%;" src="../static/img/banner_solution.jpg"/>
+                            </picture>
+
                             <div class="carousel-caption"></div>
                         </div>
                     </div>
@@ -110,240 +127,164 @@
 </div>
 <!--banner结束-->
 
-
-<div class="product single" id="solution1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 col-xs-12">
-
-                <p style="font-weight:bold ">主要产品</p>
-                <img style="width: 100%;text-align: center; vertical-align: center" src="../static/img/xian-lan.png" width=""/>
-                <p style="padding-top: 0;font-size: 1em;color: #777777">MAJOR PRODUCT</p>
-
-                <div class="hovereffect " style="padding-left: 20px">
-                    <h1 style=""><span class="rightBorder pull-left"style="border-left: 5px solid #039ce5;padding: 20px 1rem;margin-bottom: 30px">超级便利店</span></h1>
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-sm-12 col-xs-12">
-                <div class="boxx">
-                    <img class="" src="../static/img/wu.png" style="float: left"/>
-
-
-                    <ul class="boxxx1 " style="">
-                        <li class="li-hei hei-chu">24小时无人值守，扫手开门，拿了就走，自动扣款；</li>
-                        <li class="li-hei hei-chu">可容纳SKU：250个，可容纳商品：2000个；</li>
-                        <li class="li-hei hei-chu">传统门店 1/4的成本，实现70%的利润；</li>
-                        <li class="li-hei hei-chu">占地4-6个平方，可投放场景多元化；</li>
-                        <li class="li-hei hei-chu">实现真正的小投入大收益的超级AI便利店；</li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="col-lg-6 col-sm-12 col-xs-12" style="">
-                <img src="../static/img/qdrs_product1.jpg" height="" width=100% />
-            </div>
-        </div>
-    </div>
-
-</div>
-<!--超级便利店结束-->
-<div class="single"style="background-color:#f5f7fa; " id="solution2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12  col-xs-12 dg">
-                <img style="width: 100%" src="../static/img/qdrs_product2.png"/>
-            </div>
-
-            <div class="col-lg-6 col-sm-12 col-xs-12">
-                <div class="single-number" style="padding-right: 0px">
-                    <div>
-                        <div class="box1 box3" ><strong class="rightBorder">超级AI自贩柜</strong></div>
-                    </div>
-                    <div class="hovereffect-right">
-                        <div class="boxx"style="">
-                            <ul class="boxx1 box3"style="padding-right: 40px">
-                                <li class="li-hei">扫手开门，拿了就走，自动扣款</li>
-                                <li class="li-hui">智能立柜采用的是"先享后付"消费方式；</li>
-                                <li class="li-hei">可容纳SKU70个，可容纳商品700个</li>
-                                <li class="li-hui">可容纳SKU数量是传统自贩机的4倍；</li>
-                                <li class="li-hei">客单价可做到传统自贩机的4倍</li>
-                                <li class="li-hui">可投放场景多元化，回本周期8个月；</li>
-                            </ul>
-                            <img src="../static/img/san.png" height="" width=""/>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-<!--单柜介绍结束-->
-<div class="new" id="qtchanpin">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12  col-xs-12" style="padding-top: 65px">
-                <p style="font-weight:bold ">其他产品</p>
-                <img style="width: 100%;text-align: center" src="../static/img/xian-lan.png" width=""/>
-                <p style="padding-top: 0;font-size: 1em;color: #777777">OTHER PRODUCTS</p>
-
-            </div><!--<img src="img/other-title.png" width=100%/></div>-->
-        </div>
-    </div>
-
-</div>
-<div class="xiaolan single" id="solution3">
-    <div class="container new-two">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12 col-xs-12">
-                <img src="../static/img/qdrs_product3.jpg" width=100%/>
-            </div>
-
-            <div class="col-lg-6 col-sm-12 col-xs-12">
-                <div class="boxx">
-                    <ul class="boxx2 box3" style="padding-left: 100px">
-                        <div class="boox1 "><strong class="xxian">小兰冰箱</strong>
-
-                        </div>
-                        <li class="li-hei" style="padding-top: 56px">基本信息</li>
-                        <li class="li-hui2">冷柜，0-35℃冷藏保鲜，占地空间不足0.5平米，自配4G网卡</li>
-                        <li class="li-hei">货道类型</li>
-                        <li class="li-hui2">平板层架 重力滑轨（可选配） 广告屏（可选配）</li>
-                        <li class="li-hei">最大容量</li>
-                        <li class="li-hui2">224瓶左右，可容纳SKU是传统小冰柜的3倍</li>
-                        <li class="li-hei">适用场景</li>
-                        <li class="li-hui2">可多场景投放，6个月回本</li>
-                    </ul>
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<!--
-<div class="robot xiaolan single">
-    <div class="container new-two">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12 col-xs-12" style="padding:40px 40px 40px 40px">
-                <div class="boxx">
-                    <ul class="boxx2 box3">
-                        <div class="boox1 "><strong class="xxian">智能兜售机器人</strong>
-
-                        </div>
-                        <li class="li-hei" style="padding-top: 56px">产品用途：</li>
-                        <li class="li-hui2">兜售爆款商品 新品促销 推广引流</li>
-                        <li class="li-hei">产品特色：</li>
-                        <li class="li-hui2">自动躲避障碍物，自动乘坐电梯，自动寻找目标受众。</li>
-                        <li class="li-hei">适用场景：</li>
-                        <li class="li-hui2">商务楼，办公室，餐厅，机场等。</li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 col-xs-12">
-                <img src="../static/img/product_5.jpeg" width=100%/>
-            </div>
-        </div>
-    </div>
-</div>
--->
-
-<div class="foot" style="">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-6">
-                <div class="col-lg-3 col-sm-3 col-xs-3">
-                    <ul class="">
-                        <li class="title">产品系列</li>
-                        <li><a href="#">主要产品</a></li>
-                        <li><a href="#">其他产品</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-lg-3 col-xs-3 col-sm-3">
-                    <ul class="">
-                        <li class="title">经销合作</li>
-                        <li><a href="#">八大支持</a></li>
-                        <li><a href="#">项目优势</a></li>
-                        <li><a href="#">申请条件</a></li>
-                        <li><a href="#">合作流程</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-lg-3 col-xs-3 col-sm-3">
-                    <ul class="">
-                        <li class="title">新闻动态</li>
-                        <li><a href="#">行业新闻</a></li>
-                        <li><a href="#">公司新闻</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-lg-3 col-xs-3 col-sm-3">
-                    <ul class="">
-                        <li class="title">关于我们</li>
-                        <li><a href="#">公司简介</a></li>
-                        <li><a href="#">创始人</a></li>
-                        <li><a href="#">获得荣誉</a></li>
-                        <li><a href="#">深兰之路</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-            <div class="col-lg-6 foot-right">
-
-
-                <img class="pull-right" src="../static/img/tusvision.jpg" height="92" width="92"/>
-                <!--<img class="pull-right" src="img/erwm.png" height="90" width="90"/>-->
-                <p style="text-align: right">启迪睿视信息技术有限公司<br>
-                    上海市长宁区凯旋路1010号百脑通数码城B座2层<br>
-                    ©xxxx 沪ICP备17036127号-2
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
+<!--能源行业 -->
 <div>
+    <div style="padding-top: 2.5rem" id="energy" class="qdrs_title">
+        <h1>能源行业</h1>
+        <h4>Energ<span class="xxian">y&nbsp;In</span>dustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/energy.jpg);" class="energy">
+        <div class="qdrs_solution" style="">
+            <div>
+                <h2 style="text-align: left;color: red;margin-left: 0.625rem;margin-bottom: 1.375rem">智慧加油站</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>车辆识别和驾驶人身份识别</li>
+                        <li>对加油过程进行动作识别</li>
+                        <li>对车辆行走轨迹及停放位置进行识别，从而对车辆加油的全过程进行监控识别</li>
+                        <li>识别结果和油站后台管理系统进行通讯，以实现自动的加油支付过程（视觉无感支付）</li>
+                        <li>利用机器视觉对加油站前庭环境进行监控，对安保、消防隐患进行识别和监控</li>
+                        <li>利用机器视觉实现对车辆油箱口位置的精准定位识别，从而指引加油机械臂自动完成加油过程（无人加油）</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--烟草行业 -->
+<div>
+    <div style="padding-top: 2.5rem" id="tobacco" class="qdrs_title">
+        <h1>烟草行业</h1>
+        <h4>Tobacc<span class="xxian">o&nbsp;In</span>dustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/tobacco.jpg);" class="tobacco">
+        <div class="qdrs_solution" style="">
+            <div>
+                <h2 style="text-align: left;color: red;margin-left: 0.625rem;margin-bottom: 1.375rem">智慧烟草系统</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>生产制造环节，减少产品周转费用， 缩短机器停工期，提升产品质量</li>
+                        <li>原料库智能物流，烟筐烟叶残留智能识别，条包检测</li>
+                        <li>通过在堆垛机上架设相机，在出入库的过程中实时记录各类原料箱的信息（条形码），可以使用有线或无线实时传入服务器</li>
+                        <li>相机对各个仓位进行遍历，拍摄每个仓位，实时传入服务器，对比录入判别原料</li>
+                        <li>人工智能视觉选叶系统，不同光源进行实时采集，通过摄像头进行学习，运行神经网络算法，实现色彩分类</li>
+                        <li>用近红外光谱检测，通过SVM与神经网络实时分析光谱数据，检定烟叶含水率，还原糖、蛋白质、氮等成分含量，为油分分级提供参考，并监测成分变异系数，提升产品质量一致性</li>
+                        <li>智能检测烟支燃烧状态，通过相机实时监控，烟灰柱位置的形状，碎片数，掉片等特征，运行神经网络算法分析进行判断，实现批量实时监控</li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--零售行业 -->
+<div>
+    <div style="padding-top: 2.5rem" id="retail" class="qdrs_title">
+        <h1>零售行业</h1>
+        <h4>Retai<span class="xxian">l&nbsp;In</span>dustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/retail.jpg);color: white; padding: 13.875rem 0% 0% 40%;
+background-size: cover;background-position:center;" class="retail">
+        <div class="qdrs_solution">
+            <div>
+                <h2 style="text-align: left;color: red;margin-left: 0.625rem;margin-bottom: 1.375rem">智慧无人柜</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>24小时无人售货，扫手开门，自动扣款，无感支付，消费体验完美</li>
+                        <li>商品种类识别，数量统计，异常行为提示，新商品登录，大数据生成</li>
+                        <li>不需要商品额外标识(如RFID), 大幅节省成本</li>
+                        <li>结合身份验证，解决专卖商品，正品及消费人群识别问题</li>
+                        <li>商品识别率高达99%</li>
+                        <li>录入时间＜3min</li>
+                        <li>支持在线升级，远程控制</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--物流行业 -->
+<div>
+    <div style="padding-top: 40px" id="logistics" class="qdrs_title">
+        <h1>物流行业</h1>
+        <h4>Logisti<span class="xxian">cs&nbsp;I</span>ndustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/logistics.jpg);color: white; padding: 13.875rem 30% 0% 0%;
+background-size: cover;background-position:center;" class="logistics">
+        <div class="qdrs_solution" style="padding: 2.375rem 6.25rem 5rem 10.75rem">
+            <div>
+                <h2 style="text-align: left;color: red;margin-left: 0.625rem;margin-bottom: 1.375rem">智慧物流站</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>高度集成: 多面扫码，体积测量</li>
+                        <li>条码扫描：实时识别贴在包裹前后左右上任一面上的条码数据</li>
+                        <li>结合流水线改造，根据条码自动分拣</li>
+                        <li>识别速度达到20fps，准确率高达99%</li>
+                        <li>同时可识别64条码每帧</li>
+                        <li>尺寸测量精度达0.5cm</li>
+                        <li>传送带最大尺寸1.5*1.2*0.5m，传送带最高速度2.0米/秒</li>
+                        <li>支持在线升级</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="gotop">
     <a href="#">
-        <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部" style="z-index:25; position: fixed;
-         right: 10px; bottom: 10px;display: none;">
+        <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部">
     </a>
+</div>
+<div style="height: 200px; width: 100%;">
+
 </div>
 <script>
     $(function () {
-        $(function(){
-            $(window).scroll(function(){
-                if($(window).scrollTop() > 100){
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
                     $("#gotop").fadeIn(1000);//一秒渐入动画
-                }else{
+                } else {
                     $("#gotop").fadeOut(1000);//一秒渐隐动画
                 }
             });
 
-            $("#gotop").click(function(){
-                $('body,html').animate({scrollTop:0},400);
+            $("#gotop").click(function () {
+                $('body,html').animate({scrollTop: 0}, 400);
             });
 
-            $(".sss").click(function(){
+            $(".sss").click(function () {
                 //alert("disappear")
                 disappear('solutions');
             });
-            $(".about").click(function(){
+            $(".aboutus").click(function () {
                 //alert("disappear")
-                disappear('about');
+                disappear('aboutus');
             });
         });
     });
+
 </script>
+
 </body>
 </html>
 

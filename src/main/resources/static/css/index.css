@@ -674,7 +674,7 @@ h1,p {
     margin-top:1.875rem;
     letter-spacing: 2.5px;
     font-family: "黑体";
-    color: red;
+    color: #bc2925;
 }
 
 .qdrs_title h4 {
@@ -684,10 +684,10 @@ h1,p {
     letter-spacing: 2.3px;
     margin-bottom: 1.875rem;
     font-weight: bold;
-    color: red;
+    color: #bc2925;
 }
 .qdrs_title h4 > .xxian {
-    border-bottom-color: red!important;
+    border-bottom-color: #bc2925!important;
 }
 .front-tech h2 {
     font-family: "黑体";
@@ -735,8 +735,9 @@ body {
 .navigation-menu {
     height: 90px;
     width: 100%;
-    background-color: #efefef;
+    background-color: rgba(238,238,238,0.7);
     z-index: 10;
+    position: fixed;
 }
 
 .qdrs-nav-brand {
@@ -788,7 +789,7 @@ body {
     z-index: 15;
 }
 .qdrs-nav-menu > ul > li > ul > li:first-child {
-    border-top:2px solid red;
+    border-top:2px solid #bc2925;
 }
 
 .qdrs-nav-menu a {
@@ -805,7 +806,7 @@ body {
 }
 .qdrs-nav-menu li:hover,
 .qdrs-nav-menu > ul > .active {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #bc2925;
     background-color: #2f3f4f;
 }
 .qdrs-nav-menu li:hover a {
@@ -839,6 +840,7 @@ body {
     background-size: cover;
     background-position:center;
 }
+
 .energy > .qdrs_solution{
     padding: 2.375rem 11.625rem 3.125rem 2.5rem
 }
@@ -855,13 +857,67 @@ body {
     z-index:25;
     position: fixed;
     width: 4rem;
-    right: 10px;
-    bottom: 10px;
+    right: 0.625rem;
+    bottom: 0.625rem;
     display: none;
 }
+
+.nav-mobile {
+    display: none;
+    position: fixed;
+    top: 90px;
+    width: 100%;
+}
+.nav-mobile ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.nav-mobile li{
+    padding: 0.8rem;
+    padding-left: 1.25rem;
+    background-color: rgba(47,63,79,0.9);
+    border-bottom: 1px solid #afafaf;
+}
+.nav-mobile li:hover {
+    background-color: white;
+}
+.nav-mobile li:hover a {
+    color: black;
+}
+.nav-mobile li a {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+}
+.fill-nav {
+    height: 90px;
+}
+.nav-mobile-pic{
+    display: none;
+    float:right;
+    border: 1px solid black;
+    height: 25px;
+    margin-top: 2.5px;
+    width: 3.2rem;
+    margin-right: 10px;
+}
+
 @media only screen and (max-width: 768px)  {
     html {
         font-size: 8px!important;
+    }
+    .nav-mobile {
+        top:30px;
+        display: none;
+    }
+    .nav-mobile-pic {
+        display: block;
+    }
+    .fill-nav {
+        height: 30px;
+    }
+    .qdrs-nav-menu {
+        display: none;
     }
     .navigation-menu {
         height: 30px;
@@ -884,6 +940,10 @@ body {
     .fill {
         height: 5rem;
     }
+    trace-item .white {
+        margin: 0.1rem 0.5rem!important;
+        padding: 0.1rem 0.5rem!important;
+    }
     .energy, .retail {
         padding-top: 6rem!important;
         padding-left: 8rem!important;
@@ -904,10 +964,9 @@ body {
         height: 200px!important;
     }
 }
-@media only screen and (max-width: 992px) {
-    .team {
-        padding-left: 10%!important;
-        padding-right: 10%!important;
+@media only screen and (orientation: landscape) {
+    .col-xs-12 {
+
     }
 }
 /*for navigtinmenu-end*/
