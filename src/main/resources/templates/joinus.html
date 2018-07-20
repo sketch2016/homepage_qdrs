@@ -13,6 +13,9 @@
     <link rel="stylesheet"  href="../static/css/index.css">
 
     <style>
+        body {
+            font-family: 黑体,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu !important;
+        }
         .job-title-area {
             width: 100%;
         }
@@ -48,8 +51,8 @@
         .submit-border {
             width:7.5rem;
             height: 2.5rem;
-            padding-top:0.375rem;
-            border:0.0625rem solid #bc2925;
+            padding-top:0.35rem;
+            border:0.1rem solid #bc2925;
             text-align:center;
             font-size: 1.25rem;
             color: #bc2925;
@@ -100,10 +103,10 @@
         }
         .notice {
             font-size:1.1rem!important;
-            letter-spacing: 0.4rem;
+            letter-spacing: 0.3rem;
             line-height: 1.6rem;
             margin: auto 20%;
-            font-weight: bold;
+            font-weight: normal;
             text-align: left;
             text-indent: 2rem;
         }
@@ -163,9 +166,9 @@
         </ul>
     </div>
     <div class="nav-mobile-pic" >
-        <div style="width: 2rem; height: 3px;background-color: black;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
-        <div style="width: 2rem; height: 3px;background-color: black;margin: 2.5px 0.4rem 0 0.5rem;display: block;"></div>
-        <div style="width: 2rem; height: 3px;background-color: black;margin: 2.2px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.5px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.2px 0.4rem 0 0.5rem;display: block;"></div>
     </div>
     <div class="nav-mobile" id="nav-mobile">
         <ul style=";z-index: 20;width: 100%;list-style-type: none;rgba(0,0,0,0.7)">
@@ -209,7 +212,7 @@
 <!--banner结束-->
 
 <!--关于我们 -->
-<div style="font-family: 黑体!important;">
+<div>
     <div style="padding: 3.125rem 0px;background-image: url(../static/img/bg_about_title.png); background-size: cover;background-position:center;" class="qdrs_title">
         <h1>招聘岗位</h1>
         <h4>Job&nbsp;r<span class="xxian">ecru</span>itment</h4>
@@ -464,8 +467,21 @@
         <li><a href="#">></a></li>
     </ul>
 </div>
+<span>
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol id="oppo-logo-common"viewBox="0 0 415 67">
+                <path d="M48.9.3C22.1.3.3 11.2.3 24.5s21.8 24.2 48.6 24.2 48.6-10.8 48.6-24.2S75.8.3 48.9.3zm-4.7 41.4c-17.9 0-32.4-7.8-32.4-17.5S26.3 6.7 44.2 6.7s32.4 7.8 32.4 17.5-14.5 17.5-32.4 17.5zM366.1.3c-26.9 0-48.6 10.8-48.6 24.2s21.8 24.2 48.6 24.2 48.6-10.8 48.6-24.2S392.9.3 366.1.3zm-4.8 41.4c-17.9 0-32.4-7.8-32.4-17.5s14.5-17.5 32.4-17.5 32.4 7.8 32.4 17.5-14.4 17.5-32.4 17.5zM156.1.3c-8.3 0-16.7 1-22.7 2.9v6.6c5.8-2.1 11.9-3.1 18-3 17.9 0 32.3 7.8 32.3 17.5s-14.5 17.5-32.4 17.5c-12.6 0-23.9-3.9-28.9-9.6V1.7h-18v65h18V42c9 4.1 20.5 6.7 33.5 6.7 26.8 0 48.7-10.8 48.7-24.2S182.9.3 156.1.3zM262.6.3c-7.8 0-15.6.9-23.2 2.9v6.6c6-2 12.2-3 18.5-3 17.9 0 32.5 7.8 32.5 17.5S276 41.7 258.1 41.7c-12.6 0-23.7-3.9-28.7-9.6V1.7h-18v65h17.8V42.3c8.7 4.1 20.5 6.6 33.6 6.6 26.8 0 48.5-10.9 48.5-24.3S289.4.3 262.6.3z"/>
+            </symbol>
+        </svg>
+</span>
+<div>
+    <div style="height: 5rem;background-color: white;padding-top: 2rem">
+        <p style="text-align: center;color: black;font-size: 1rem;">
+            2018-芜湖启迪睿视信息技术有限公司 版权所有 <a style="text-decoration: none;color: black" href="http://www.miitbeian.gov.cn">皖ICP备18014597号</a>
+        </p>
 
-<div style="height: 200px; width: 100%;"></div>
+    </div>
+</div>
 <div class="gotop">
     <a href="#">
         <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部">
@@ -504,6 +520,12 @@
             });
             $(".nav-mobile-pic").click(function(){
                 $(".nav-mobile").toggle();
+                var a = $(".nav-mobile-pic").css("border-color");
+                if (a != 'rgb(255, 0, 0)') {
+                    $(".nav-mobile-pic").css("border", "1px solid red");
+                } else {
+                    $(".nav-mobile-pic").css("border", "1px solid transparent");
+                }
             });
         });
     });

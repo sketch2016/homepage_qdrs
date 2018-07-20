@@ -735,8 +735,8 @@ body {
 .navigation-menu {
     height: 90px;
     width: 100%;
-    background-color: rgba(238,238,238,0.7);
-    z-index: 10;
+    background-color: rgba(238,238,238,1.0);
+    z-index: 20;
     position: fixed;
 }
 
@@ -866,13 +866,14 @@ body {
     display: none;
     position: fixed;
     top: 90px;
-    width: 100%;
+
 }
 .nav-mobile ul {
     list-style-type: none;
     padding: 0px;
 }
 .nav-mobile li{
+
     padding: 0.8rem;
     padding-left: 1.25rem;
     background-color: rgba(47,63,79,0.9);
@@ -888,6 +889,7 @@ body {
     display: block;
     font-size: 1.5rem;
     color: white;
+    text-align: center;
 }
 .fill-nav {
     height: 90px;
@@ -895,7 +897,7 @@ body {
 .nav-mobile-pic{
     display: none;
     float:right;
-    border: 1px solid black;
+    border:1px solid transparent;
     height: 25px;
     margin-top: 2.5px;
     width: 3.2rem;
@@ -908,6 +910,7 @@ body {
     }
     .nav-mobile {
         top:30px;
+        right: 2px;
         display: none;
     }
     .nav-mobile-pic {
@@ -962,11 +965,6 @@ body {
     }
     #dituContent {
         height: 200px!important;
-    }
-}
-@media only screen and (orientation: landscape) {
-    .col-xs-12 {
-
     }
 }
 /*for navigtinmenu-end*/

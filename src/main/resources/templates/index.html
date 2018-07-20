@@ -12,14 +12,15 @@
     <link media="all" type="text/css" rel="stylesheet" href="../static/css/news_qdrs.css"/>
 
     <style>
+        body {
+            font-family: 黑体,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu !important;
+        }
         .center_white {text-align:center;color: white}
         .center_white p{text-align:center;color: white}
         .container p {
             margin-top:10px;
         }
         .container h2 {
-
-            font-family: 黑体;
             font-size: 1.625rem;
             text-align: center;
         }
@@ -32,7 +33,7 @@
         .news-item {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             background-color: white;
-            padding: 5px;
+            margin: 5px;
             box-sizing: padding-box;
         }
 
@@ -71,7 +72,7 @@
     <![endif]-->
     <script>
         $(document).ready(function () {
-            $('#rectContent').carousel({interval: 2000});//每隔5秒自动轮播
+            $('#rectContent').carousel({interval: 3000});//每隔3秒自动轮播
         });
 
     </script>
@@ -114,12 +115,12 @@
         </ul>
     </div>
     <div class="nav-mobile-pic" >
-        <div style="width: 2rem; height: 3px;background-color: black;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
-        <div style="width: 2rem; height: 3px;background-color: black;margin: 2.5px 0.4rem 0 0.5rem;display: block;"></div>
-        <div style="width: 2rem; height: 3px;background-color: black;margin: 2.2px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.5px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.2px 0.4rem 0 0.5rem;display: block;"></div>
     </div>
     <div class="nav-mobile" id="nav-mobile">
-        <ul style=";z-index: 20;width: 100%;list-style-type: none;rgba(0,0,0,0.7)">
+        <ul style=";z-index: 20;list-style-type: none;rgba(0,0,0,0.7)">
             <li ><a href="/">首页</a></li>
             <li ><a href="/about">关于睿视</a></li>
             <li ><a href="/solutions">解决方案</a></li>
@@ -195,7 +196,7 @@
         <h4>Frontie<span class="xxian">r&nbsp;Te</span>chnology</h4>
     </div>
     <div class="center_white" style="background-image: url(../static/img/bg_ft.jpg); background-size: cover;background-position:center;">
-        <div class="container" style="font-family: 黑体!important;">
+        <div class="container">
             <div class="row" style="padding:4% 15% 3% 15%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
                     <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
@@ -239,7 +240,7 @@
         <h4>Strate<span class="xxian">gic&nbsp;</span>Partner</h4>
     </div>
     <div style="background-color: #f5f5f5">
-        <div class="container" style="font-family: 黑体; font-size: 1rem;">
+        <div class="container" style="font-size: 1rem;">
             <div class="row" style="padding:3% 0% 3% 14%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
 
@@ -281,7 +282,7 @@
                     </div>
                     <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
                         <img src="../static/img/partner_ginger.png" class="center-block" width="80%"/>
-                        <p>上海金姜物联</p>
+                        <p>上海锦喆物联</p>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
                         <img src="../static/img/partner_anyone.png" class="center-block" width="80%"/>
@@ -373,39 +374,48 @@
     <div class="container">
         <div class="row" style="padding:3% 10%">
             <div class="col-lg-12 col-sm-12 col-xs-12">
-                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4 news-item">
-                    <a href="https://www.sohu.com/a/205954763_100051928">
-                        <picture>
-                            <source type="image/webp" srcset="../static/img/news_1.webp">
-                            <img src="../static/img/news_1.jpg" class="center-block" height="auto" width="90%" />
-                        </picture>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4 ">
+                    <div class="news-item">
+                        <a href="https://www.sohu.com/a/205954763_100051928">
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/news_1.webp">
+                                <img src="../static/img/news_1.jpg" class="center-block" height="auto" width="100%" />
+                            </picture>
 
-                        <p>人工智能是什么？</p>
-                    </a>
+                            <p>人工智能是什么？</p>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4 news-item">
-                    <a href="https://www.sohu.com/a/204953621_606872">
-                        <picture>
-                            <source type="image/webp" srcset="../static/img/news_2.webp">
-                            <img src="../static/img/news_2.jpg" class="center-block" height="auto" width="90%" />
-                        </picture>
-                        <p style="text-align: center">人工智能应用领域 </p>
-                    </a>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                    <div class="news-item">
+                        <a href="https://www.sohu.com/a/204953621_606872">
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/news_2.webp">
+                                <img src="../static/img/news_2.jpg" class="center-block" height="auto" width="100%" />
+                            </picture>
+                            <p style="text-align: center">人工智能应用领域 </p>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4 news-item">
-                    <a href="https://www.sohu.com/a/208748042_116138">
-                        <picture>
-                            <source type="image/webp" srcset="../static/img/news_3.webp">
-                            <img src="../static/img/news_3.jpg" class="center-block" height="auto" width="90%" />
-                        </picture>
-                        <p style="text-align: center">人工智能四大发展趋势</p>
-                    </a>
+                <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                    <div class="news-item">
+                        <a href="https://www.sohu.com/a/208748042_116138">
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/news_3.webp">
+                                <img src="../static/img/news_3.jpg" class="center-block" height="auto" width="100%" />
+                            </picture>
+                            <p style="text-align: center">人工智能四大发展趋势</p>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
         <!--
         <div class="center-block" style="width:20%; margin: 0% 40%">
-            <div class="container" style="font-family: 黑体; font-size: 16px;">
+            <div class="container" style="font-size: 16px;">
                 <div class="row" style="padding:3% 0% 3% 14%">
                     <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 arrow-left">
@@ -438,7 +448,7 @@
 
 <!--技术前瞻
 <div>
-    <div style="padding: 50px 0px; background-color: #fbfbfb;font-family: 黑体!important;">
+    <div style="padding: 50px 0px; background-color: #fbfbfb;">
         <h1 style="text-align: center; padding-bottom: 10px;letter-spacing: 0.125rem;font-size: 1.875rem;">技术前瞻</h1>
         <p style="text-align: center; line-height: 40px;font-size: 1.125rem;letter-spacing: 0.125rem"><span>2018人工智能十大趋势<br>今年，人工智能将会怎样改变世界和市场？
             <br>人工智能时各个国家和公司竞相争夺控制权的前沿科技。</span></p>
@@ -453,21 +463,28 @@
 <!--二维码 -->
 <div>
     <div class="support" style="background-color: #f5f5f5">
-        <div class="container" style="font-family: 黑体; font-size: 1.125rem">
+        <div class="container" style="font-size: 1.125rem">
             <div class="row" style="padding:3% 20%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
                     <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
                         <img src="../static/img/erweima.png"  style="border-radius:50%; min-width: 75px" class="center-block" height="auto" width="20%;"/>
-                        <p style="font-family: 黑体; font-size: 1.125rem">启迪睿视官方微信</p>
+                        <p style="font-size: 1.125rem">启迪睿视官方微信</p>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
                         <img src="../static/img/erweima.png" style="border-radius:50%;min-width: 75px" class="center-block" height="auto" width="20%"/>
-                        <p style="font-family: 黑体; font-size: 1.125rem">启迪睿视官方APP</p>
+                        <p style="font-size: 1.125rem">启迪睿视官方APP</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div style="height: 5rem;background-color: white;padding-top: 2rem;">
+    <p style="text-align: center;color: black;font-size: 1rem;">
+        2018-芜湖启迪睿视信息技术有限公司 版权所有 <a style="text-decoration: none;color: black" href="http://www.miitbeian.gov.cn">皖ICP备18014597号</a>
+    </p>
+
 </div>
 
 <!--回到顶部 -->
@@ -505,6 +522,12 @@
             });
             $(".nav-mobile-pic").click(function(){
                 $(".nav-mobile").toggle();
+                var a = $(".nav-mobile-pic").css("border-color");
+                if (a != 'rgb(255, 0, 0)') {
+                    $(".nav-mobile-pic").css("border", "1px solid red");
+                } else {
+                    $(".nav-mobile-pic").css("border", "1px solid transparent");
+                }
             });
 
         });
