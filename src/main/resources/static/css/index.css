@@ -787,6 +787,7 @@ body {
     float: none;
     border-bottom: 0.125rem solid #aaa;
     z-index: 15;
+    line-height: 2.2rem;
 }
 .qdrs-nav-menu > ul > li > ul > li:first-child {
     border-top:2px solid #bc2925;
@@ -796,7 +797,7 @@ body {
     text-decoration: none !important;
     padding-bottom: 20px;
     color: #000;
-
+    font-size: 1.2rem;
 }
 .qdrs-nav-menu > ul > .active,
 .qdrs-nav-menu > ul > .active > a{
@@ -899,31 +900,60 @@ body {
     float:right;
     border:1px solid transparent;
     height: 25px;
-    margin-top: 2.5px;
+    margin-top: 6px;
     width: 3.2rem;
     margin-right: 10px;
+}
+.challenge_title {
+    color: white;
+    padding: 5% 20% 5% 20%;
+}
+.challenge ul {
+    list-style-type: inherit;
+    padding-left: 5rem;
+    color: #f00;
+    line-height: 2.5rem;
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.team {
+    color: white;
+    padding: 5% 20% 5% 20%;
 }
 
 @media only screen and (max-width: 768px)  {
     html {
         font-size: 8px!important;
     }
+    .team {
+        color: white;
+        padding: 5% 10% 5% 10%;
+    }
+    .challenge_title {
+        color: white;
+        padding: 5%;
+    }
     .nav-mobile {
-        top:30px;
+        top:40px;
         right: 2px;
         display: none;
     }
     .nav-mobile-pic {
         display: block;
     }
+    .news-item p {
+        padding-top: 0.5rem!important;
+        padding-bottom: 0.5rem!important;
+    }
     .fill-nav {
-        height: 30px;
+        height: 40px;
     }
     .qdrs-nav-menu {
         display: none;
     }
     .navigation-menu {
-        height: 30px;
+        height: 40px;
     }
     .qdrs-nav-menu > ul {
         right: 0px;
@@ -936,9 +966,6 @@ body {
     }
     .qdrs-nav-menu > ul > li {
         margin: 0px 5px;
-    }
-    .abouttusvision {
-        padding: 2rem;
     }
     .fill {
         height: 5rem;

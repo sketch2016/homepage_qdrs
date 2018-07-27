@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=1">
     <meta name="keywords" content="人工智能，无人售货柜，人工智能加油站，烟草，启迪睿视，启迪睿视信息技术有限公司">
     <meta name="description" content="启迪睿视将人工智能应用到多个领域，主要包括零售行业、能源行业、物流行业和烟草行业，实现了从人工到智能的跨越">
     <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0">
@@ -13,33 +13,73 @@
 
     <style>
         body {
-            font-family: 黑体,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu !important;
+            font-family: 黑体, "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu !important;
         }
-        .center_white {text-align:center;color: white}
-        .center_white p{text-align:center;color: white}
+
+        .center_white {
+            text-align: center;
+            color: white
+        }
+
+        .center_white p {
+            text-align: center;
+            color: white
+        }
+
         .container p {
-            margin-top:10px;
+            margin-top: 10px;
         }
+
         .container h2 {
             font-size: 1.625rem;
             text-align: center;
         }
+
         .xxian {
             border-bottom: 2px solid white;
         }
-        #front-tech p{
+
+        #front-tech p {
             font-size: 1.125rem;
         }
         .news-item {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             background-color: white;
-            margin: 5px;
+            margin: 0.3rem;
             box-sizing: padding-box;
+            position: relative;
+        }
+        .news-item p {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
 
         .news-item:hover {
             transform: scale(1.2);
             z-index: 5;
+        }
+
+        .platform p,
+        .platform h2 {
+            color: white;
+        }
+
+        .platform p {
+            padding-left: 20%;
+            padding-right: 20%;
+            height: 5rem;
+        }
+
+        .platform_line {
+            width: 1.2rem;
+            background-color: white;
+            height: 0.12rem;
+            margin-top: -0.7rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .partner-item {
+            margin-top: 3rem;
         }
     </style>
 
@@ -50,13 +90,12 @@
     <script type="text/javascript" src="../static/js/autoshowmenu.js"></script>
 
 
-
     <!--[if lt IE 9]>
-    　　<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    　　<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    　　
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    　　
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-
 
 
     <!--[if IE]>
@@ -92,15 +131,6 @@
     <div class="qdrs-nav-menu" style="float: left;">
         <ul style="list-style-type: none">
             <li class="active"><a href="/">首页</a></li>
-            <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')"><a href="/about">关于睿视</a>
-                <ul id="aboutus">
-                    <li class="aboutus"><a href="/about#about_us">关于我们</a></li>
-                    <li class="aboutus" ><a href="/about#wish">使命愿景</a></li>
-                    <li class="aboutus"><a href="/about#brand">品牌内涵</a></li>
-                    <li class="aboutus"><a href="/about#team">团队风采</a></li>
-                    <li class="aboutus"><a href="/about#trace">睿视之路</a></li>
-                </ul>
-            </li>
             <li onmouseover="appear('solutions')" onmouseout="disappear('solutions')">
                 <a href="/solutions">解决方案</a>
                 <ul id="solutions" style="list-style-type:none;">
@@ -110,22 +140,31 @@
                     <li class="sss"><a href="/solutions#logistics">新物流</a></li>
                 </ul>
             </li>
+            <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')"><a href="/about">关于睿视</a>
+                <ul id="aboutus">
+                    <li class="aboutus"><a href="/about#about_us">关于我们</a></li>
+                    <li class="aboutus"><a href="/about#wish">使命愿景</a></li>
+                    <li class="aboutus"><a href="/about#brand">品牌内涵</a></li>
+                    <li class="aboutus"><a href="/about#team">团队风采</a></li>
+                    <li class="aboutus"><a href="/about#trace">睿视之路</a></li>
+                </ul>
+            </li>
             <li><a href="/joinus">加入我们</a></li>
             <li><a href="/contactus">联系我们</a></li>
         </ul>
     </div>
-    <div class="nav-mobile-pic" >
+    <div class="nav-mobile-pic">
         <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
-        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.5px 0.4rem 0 0.5rem;display: block;"></div>
-        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.2px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.4px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.1px 0.4rem 0 0.5rem;display: block;"></div>
     </div>
     <div class="nav-mobile" id="nav-mobile">
         <ul style=";z-index: 20;list-style-type: none;rgba(0,0,0,0.7)">
-            <li ><a href="/">首页</a></li>
-            <li ><a href="/about">关于睿视</a></li>
-            <li ><a href="/solutions">解决方案</a></li>
-            <li ><a href="/joinus">加入我们</a></li>
-            <li ><a href="/contactus">联系我们</a></li>
+            <li><a href="/">首页</a></li>
+            <li><a href="/solutions">解决方案</a></li>
+            <li><a href="/about">关于睿视</a></li>
+            <li><a href="/joinus">加入我们</a></li>
+            <li><a href="/contactus">联系我们</a></li>
         </ul>
     </div>
 </div>
@@ -136,7 +175,7 @@
 </div>
 -->
 
-<div class ="fill-nav"></div>
+<div class="fill-nav"></div>
 
 <!--banner -->
 <div class="banner" id="banner">
@@ -152,21 +191,21 @@
                     <div class="carousel-inner">
                         <div class="item active">
                             <picture>
-                                <source type="image/webp" srcset="../static/img/banner1_index.webp">
-                                <img style="width: 100%;height: auto;" src="../static/img/banner1_index.jpg"/>
+                                <!--<source type="image/webp" srcset="../static/img/banner1_index.webp">-->
+                                <img style="width: 100%;height: auto;" src="../static/img/banner1_index.png"/>
                             </picture>
                             <div class="carousel-caption"></div>
                         </div>
                         <div class="item">
                             <picture>
-                                <source type="image/webp" srcset="../static/img/banner2_index.webp">
-                                <img style="width: 100%;height: auto;" src="../static/img/banner2_index.jpg"/>
+                                <!--<source type="image/webp" srcset="../static/img/banner2_index.webp">-->
+                                <img style="width: 100%;height: auto;" src="../static/img/banner2_index.png"/>
                             </picture>
                             <div class="carousel-caption"></div>
                         </div>
                         <div class="item">
                             <picture>
-                                <source type="image/webp" srcset="../static/img/banner3_index.webp">
+                                <!--<source type="image/webp" srcset="../static/img/banner3_index.webp">-->
                                 <img style="width: 100%;height: auto;" src="../static/img/banner3_index.jpg"/>
                             </picture>
 
@@ -189,43 +228,69 @@
     </div>
 </div>
 
-<!--前沿科技 -->
-<div id="front-tech">
-    <div style="padding: 3.12rem; background-image: url(../static/img/bg_front_tech.png);background-repeat: no-repeat;" class="qdrs_title">
-        <h1>前沿科技</h1>
-        <h4>Frontie<span class="xxian">r&nbsp;Te</span>chnology</h4>
+<!--以人工智能端侧计算为特征的智能制造嵌入式技术 -->
+<div class="ai_produce" style="margin: 0rem auto 3rem auto;">
+    <div style="padding-top: 3.125rem;padding-bottom: 3rem;" id="ai_produce" class="qdrs_title">
+        <h1 style="text-align: center;font-size: 2rem;">以人工智能端侧计算为特征的<br>智能制造嵌入式技术</h1>
     </div>
-    <div class="center_white" style="background-image: url(../static/img/bg_ft.jpg); background-size: cover;background-position:center;">
-        <div class="container">
-            <div class="row" style="padding:4% 15% 3% 15%">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
-                        <img src="../static/img/lingxian.png" class="center-block" height="auto" width="20%"/>
-                        <h2>领<span class="xxian">先</span>性</h2>
-                        <p>贝叶斯方法与马尔科夫链结合神经网络</p>
-                        <p>基于传感器融合的多特征神经网络</p>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
-                        <img src="../static/img/chuangxin.png" class="center-block" height="auto" width="20%"/>
-                        <h2 style="text-align: center">创<span class="xxian">新</span>性</h2>
-                        <p style="text-align: center">将人工智能引入传统行业进行智能改造</p>
-                        <p style="text-align: center">端侧运算与云端处理结合的灵活解决方案</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="padding:1% 15% 4% 15%">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
-                        <img src="../static/img/linghuo.png" class="center-block" height="auto" width="20%"/>
-                        <h2>灵<span class="xxian">活</span>性</h2>
-                        <p style="text-align: center">开放架构设计，支持多种框架和数据格式</p>
-                        <p style="text-align: center">良好的泛化能力，可快速应用于各种新领域</p>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
-                        <img src="../static/img/gaoxiao.png" class="center-block" height="auto" width="20%"/>
-                        <h2>高<span class="xxian">效</span>性</h2>
-                        <p style="text-align: center">低复杂度模型，实现移动处理器上的实时部署</p>
-                        <p style="text-align: center">汇编级底层优化，充分发挥移动处理器潜力</p>
+    <div style="padding-top: 2rem; padding-bottom: 3rem;background-color: #3f7cc1">
+        <img src="../static/img/ai_produce.png" class="center-block" style="max-width: 80%"/>
+    </div>
+</div>
+
+<!--具有自主知识产权的人工智能嵌入式平台 -->
+<div id="plugin_platform" style="margin-top: 4rem;">
+    <div style="padding: 3.12em" class="qdrs_title">
+        <h1 style="font-size: 2rem;">具有自主知识产权的<br>人工智能嵌入式平台</h1>
+    </div>
+    <div style="background-image: url(../static/img/bg_platform.png);">
+        <div class="center_white"
+             style="background-image: url(../static/img/bg_platform.png); background-size: cover;background-position:center;">
+            <div class="container platform">
+                <div class="row" style="padding:4% 10% 3% 10%">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-3 col-sm-4 col-xs-6 col-md-3" style="padding-top: 5%;">
+                            <img src="../static/img/platform_01.png" class="center-block" width="30%"/>
+                            <h1>高性能</h1>
+                            <div class="center-block platform_line"></div>
+                            <p style="padding: auto 2rem;">基于自定义操作系统，优化异构计算平台，充分发挥多核CPU+DSP+加速器能力</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-xs-6 col-md-3" style="padding-top: 5%;">
+                            <img src="../static/img/platform_02.png" class="center-block" width="30%"/>
+                            <h1>图像</h1>
+                            <div class="center-block platform_line"></div>
+                            <p style="padding: auto 2rem;">针对工业相机优化的定制ISP，有效提升特征提取精度</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-xs-6 col-md-3" style="padding-top: 5%;">
+                            <img src="../static/img/platform_03.png" class="center-block" width="30%"/>
+                            <h1>多传感</h1>
+                            <div class="center-block platform_line"></div>
+                            <p style="padding: auto 2rem;">丰富的外设接口和基于sensorhub框架的传感器管理系统</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-xs-6 col-md-3" style="padding-top: 5%;">
+                            <img src="../static/img/platform_04.png" class="center-block" width="30%"/>
+                            <h1>通信</h1>
+                            <div class="center-block platform_line"></div>
+                            <p style="padding: auto 2rem;">自带modem，便于传输组网</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-xs-6 col-md-3" style="padding-top: 5%;">
+                            <img src="../static/img/platform_05.png" class="center-block" width="30%"/>
+                            <h1>AI</h1>
+                            <div class="center-block platform_line"></div>
+                            <p style="padding: auto 2rem;">满足实时目标检测算法的需求</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-xs-6 col-md-3" style="padding-top: 5%;">
+                            <img src="../static/img/platform_06.png" class="center-block" width="30%"/>
+                            <h1>继承性</h1>
+                            <div class="center-block platform_line"></div>
+                            <p style="padding: auto 2rem;">支持与已有系统通过PLC等方式进行交互，实现增量升级</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-xs-6 col-md-3" style="padding-top: 5%;">
+                            <img src="../static/img/platform_07.png" class="center-block" width="30%"/>
+                            <h1>通用</h1>
+                            <div class="center-block platform_line"></div>
+                            <p style="padding: auto 2rem;">可搭配相机实现监测监控功能，也可作为主控，与其他设备或传感器连接</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,133 +306,63 @@
     </div>
     <div style="background-color: #f5f5f5">
         <div class="container" style="font-size: 1rem;">
-            <div class="row" style="padding:3% 0% 3% 14%">
+            <div class="row" style="padding:3% 10% 3% 10%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
 
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_china.png" class="center-block" width="80%"/>
                         <p>中国烟草</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_yunnan.png" class="center-block" width="80%"/>
                         <p>云南中烟</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_henan.png" class="center-block" width="80%"/>
                         <p>河南中烟</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_jiangsu.png" class="center-block" width="80%"/>
                         <p>江苏中烟</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_kuka.png" class="center-block" width="80%"/>
                         <p>库卡机器人</p>
                     </div>
-                </div>
-            </div>
-            <div class="row" style="padding:3% 0% 3% 14%">
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_zhengxing.png" class="center-block" width="80%"/>
                         <p>郑州正星集团</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_jingjia.png" class="center-block" width="80%"/>
                         <p>深圳劲嘉科技集团</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_baishi.png" class="center-block" width="80%"/>
                         <p>杭州百世物流</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_ginger.png" class="center-block" width="80%"/>
                         <p>上海锦喆物联</p>
                     </div>
-                    <div class="col-lg-2 col-sm-2 col-xs-4 col-md-4">
+                    <div class="col-lg-2-4 col-sm-2-4 col-xs-4 col-md-4 partner-item">
                         <img src="../static/img/partner_anyone.png" class="center-block" width="80%"/>
                         <p>期待与您合作</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="row" style="padding:3% 0% 3% 14%">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
 
-<!--新闻动态 -->
-<!--
-<div>
-    <div style="padding-top: 50px" class="qdrs_title">
-        <h1>新闻动态</h1>
-        <h4>News &nbsp;<span class="xxian">and&nbsp;</span>Trends</h4>
-    </div>
-    <div>
-        <div class="win-win">
-            <div class="territory">
-                <div class="ivu-row">
-                    <div class="ivu-col ivu-col-span-8">
-                        <div class="box" style="left: 1px;">
-                            <img
-                                    src="../static/img/news_1.jpg"
-                                    alt="主要是依靠生物识别技术，根据人体可提供的唯一特征，包括身体特征和行为特征确定客户身份，然后再与个人支付账户进行关联，交易时只需要识别生物特征，就可以完成支付。">
-                            <h2 class="title">生物支付</h2>
-                            <div class="content">
-                                主要是依靠生物识别技术，根据人体可提供的唯一特征，包括身体特征和行为特征确定客户身份，然后再与个人支付账户进行关联，交易时只需要识别生物特征，就可以完成支付。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ivu-col ivu-col-span-8">
-                        <div class="box boxZindex-2" style="left: 297.708px;">
-                            <img
-                                    src="../static/img/news_2.jpg"
-                                    alt="一种前馈神经网络，它的人工神经元可以响应一部分覆盖范围内的周围单元，对于大型图像处理有出色表现。由于该网络避免了对图像的复杂前期预处理，可以直接输入原始图像，因而得到了更为广泛的应用。">
-                            <h2 class="title">卷积神经网络</h2>
-                            <div class="content">
-                                一种前馈神经网络，它的人工神经元可以响应一部分覆盖范围内的周围单元，对于大型图像处理有出色表现。由于该网络避免了对图像的复杂前期预处理，可以直接输入原始图像，因而得到了更为广泛的应用。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ivu-col ivu-col-span-8">
-                        <div class="box boxZindex-3" style="left: 594.417px;">
-                            <img
-                                    src="../static/img/news_3.jpg"
-                                    alt="包括图像处理、机械工程技术、控制、电光源照明、光学成像、传感器、模拟与数字视频技术、计算机软硬件技术（图像增强和分析算法、图像卡、 I/O卡等）。简单说来，机器视觉就是用机器代替人眼来做测量和判断。">
-                            <h2 class="title">机器视觉</h2>
-                            <div class="content">包括图像处理、机械工程技术、控制、电光源照明、光学成像、传感器、模拟与数字视频技术、计算机软硬件技术（图像增强和分析算法、图像卡、
-                                I/O卡等）。简单说来，机器视觉就是用机器代替人眼来做测量和判断。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ivu-col ivu-col-span-8">
-                        <div class="box boxZindex-2" style="left: 891.125px;">
-                            <img
-                                    src="../static/img/news_4.jpg"
-                                    alt="是机器学习研究中的一个新领域，其动机在于建立、模拟人脑进行分析学习的神经网络，它模仿人脑的机制来解释数据，例如图像，声音和文本。">
-                            <h2 class="title">深度学习</h2>
-                            <div class="content">是机器学习研究中的一个新领域，其动机在于建立、模拟人脑进行分析学习的神经网络，它模仿人脑的机制来解释数据，例如图像，声音和文本。</div>
-                        </div>
-                    </div>
-                    <div class="ivu-col ivu-col-span-8">
-                        <div class="box" style="left: 1187.83px;">
-                            <img
-                                    src="../static/img/news_5.jpg"
-                                    alt="基于生物识别的支付和比对系统算法，生物识别技术主要是指通过人类生物特征进行身份认证的一种技术。人类的生物特征通常具有唯一性、可以测量或可自动识别和验证、终身不变等特点。">
-                            <h2 class="title">生物识别</h2>
-                            <div class="content">
-                                基于生物识别的支付和比对系统算法，生物识别技术主要是指通过人类生物特征进行身份认证的一种技术。人类的生物特征通常具有唯一性、可以测量或可自动识别和验证、终身不变等特点。
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
--->
 
 <div>
-    <div class="qdrs_title" style="padding-top: 3.125rem;background-image: url(../static/img/bg_news.png);background-repeat: no-repeat;background-position: right">
+    <div class="qdrs_title"
+         style="padding-top: 3.125rem;background-image: url(../static/img/bg_news.png);background-repeat: no-repeat;background-position: right">
         <h1>新闻动态</h1>
         <h4>News &nbsp;<span class="xxian">and&nbsp;</span>Trends</h4>
     </div>
@@ -379,7 +374,7 @@
                         <a href="https://www.sohu.com/a/205954763_100051928">
                             <picture>
                                 <source type="image/webp" srcset="../static/img/news_1.webp">
-                                <img src="../static/img/news_1.jpg" class="center-block" height="auto" width="100%" />
+                                <img src="../static/img/news_1.jpg" class="center-block" height="auto" width="100%"/>
                             </picture>
 
                             <p>人工智能是什么？</p>
@@ -392,7 +387,7 @@
                         <a href="https://www.sohu.com/a/204953621_606872">
                             <picture>
                                 <source type="image/webp" srcset="../static/img/news_2.webp">
-                                <img src="../static/img/news_2.jpg" class="center-block" height="auto" width="100%" />
+                                <img src="../static/img/news_2.jpg" class="center-block" height="auto" width="100%"/>
                             </picture>
                             <p style="text-align: center">人工智能应用领域 </p>
                         </a>
@@ -404,7 +399,7 @@
                         <a href="https://www.sohu.com/a/208748042_116138">
                             <picture>
                                 <source type="image/webp" srcset="../static/img/news_3.webp">
-                                <img src="../static/img/news_3.jpg" class="center-block" height="auto" width="100%" />
+                                <img src="../static/img/news_3.jpg" class="center-block" height="auto" width="100%"/>
                             </picture>
                             <p style="text-align: center">人工智能四大发展趋势</p>
                         </a>
@@ -443,9 +438,6 @@
 </div>
 
 
-    <!--<iframe src="transform.html" width="80%" height="300px" frameborder="0px"></iframe>-->
-
-
 <!--技术前瞻
 <div>
     <div style="padding: 50px 0px; background-color: #fbfbfb;">
@@ -466,14 +458,19 @@
         <div class="container" style="font-size: 1.125rem">
             <div class="row" style="padding:3% 20%">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
-                        <img src="../static/img/erweima.png"  style="border-radius:50%; min-width: 75px" class="center-block" height="auto" width="20%;"/>
-                        <p style="font-size: 1.125rem">启迪睿视官方微信</p>
+                    <!--
+                    <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 ">
+                        <img src="../static/img/erweima.png" style="border-radius:50%; min-width: 75px"
+                             class="center-block" height="auto" width="20%;"/>
+                        <p style="font-size: 1.125rem">启迪睿视官方微信公众号</p>
                     </div>
+                    -->
+                    <!---
                     <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
                         <img src="../static/img/erweima.png" style="border-radius:50%;min-width: 75px" class="center-block" height="auto" width="20%"/>
                         <p style="font-size: 1.125rem">启迪睿视官方APP</p>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -495,24 +492,24 @@
 </div>
 <script>
     $(function () {
-        $(function(){
-            $(window).scroll(function(){
-                if($(window).scrollTop() > 100){
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
                     $("#gotop").fadeIn(1000);//一秒渐入动画
-                }else{
+                } else {
                     $("#gotop").fadeOut(1000);//一秒渐隐动画
                 }
             });
 
-            $("#gotop").click(function(){
-                $('body,html').animate({scrollTop:0},400);
+            $("#gotop").click(function () {
+                $('body,html').animate({scrollTop: 0}, 400);
             });
 
-            $(".sss").click(function(){
+            $(".sss").click(function () {
                 //alert("disappear")
                 disappear('solutions');
             });
-            $(".aboutus").click(function(){
+            $(".aboutus").click(function () {
                 //alert("disappear")
                 disappear('aboutus');
             });
@@ -520,7 +517,7 @@
                 //alert("hover")
                 //$("#aboutus").css("border-top", "none");
             });
-            $(".nav-mobile-pic").click(function(){
+            $(".nav-mobile-pic").click(function () {
                 $(".nav-mobile").toggle();
                 var a = $(".nav-mobile-pic").css("border-color");
                 if (a != 'rgb(255, 0, 0)') {
@@ -529,6 +526,19 @@
                     $(".nav-mobile-pic").css("border", "1px solid transparent");
                 }
             });
+
+            // $(".news-item").mouseover(function () {
+            //     $(this).css("z-index", "10");
+            //     $(this).css("background-color", "red");
+            //
+            //     //alert('onmouseenter')
+            // });
+            // $(".news-item").mouseleave(function () {
+            //     $(this).css("z-index", "1");
+            //     $(this).css("background-color", "white");
+            //
+            //     //alert('onmouseleave')
+            // });
 
         });
     });
